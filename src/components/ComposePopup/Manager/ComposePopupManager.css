@@ -1,0 +1,28 @@
+.compose-popups {
+  position: fixed;
+  bottom: 0;
+  right: 90px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.minimized-popups {
+  position: fixed;
+  bottom: 0;
+  right: 90px;
+  display: flex;
+  flex-direction: row-reverse;
+}
+
+.minimized-popup {
+  background-color: #474747;
+  border: none;
+  border-radius: 8px 8px 0 0;
+  padding: 5px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+  font-size: 16px;
+  color: #f2f2f2;
+  width: 210px;
+  font-family: "Product Sans";
+}

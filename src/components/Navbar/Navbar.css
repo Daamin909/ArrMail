@@ -1,0 +1,97 @@
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px 16px;
+  background-color: var(--surface);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  height: 64px;
+  user-select: none;
+}
+
+.navbar-left {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  height: 48px;
+  margin-right: 12px;
+  pointer-events: none;
+}
+
+.app-name {
+  font-size: 32px;
+  font-weight: 500;
+  font-family: "Jack Skull";
+  color: var(--on-surface);
+}
+
+.navbar-center {
+  flex: 1;
+  max-width: 720px;
+  margin: 0 16px;
+}
+
+.search-bar {
+  position: relative;
+  width: 100%;
+}
+
+.search-icon {
+  position: absolute;
+  left: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--on-surface-variant);
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 8px 12px 8px 36px;
+  border-radius: 8px;
+  border: none;
+  background-color: var(--surface-light);
+  color: var(--on-surface);
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.search-bar input:focus {
+  background-color: var(--surface);
+  outline: none;
+}
+
+.navbar-right {
+  display: flex;
+  align-items: center;
+}
+
+.icon-button {
+  background: none;
+  border: none;
+  color: var(--on-surface);
+  font-size: 18px;
+  cursor: pointer;
+  margin-right: 16px;
+  transition: color 0.2s ease;
+}
+
+.icon-button:hover {
+  background: var(--accent-gradient);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.profile-picture {
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.profile-picture img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

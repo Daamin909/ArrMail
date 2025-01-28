@@ -1,0 +1,4 @@
+__pycache__
+.env
+endpoints/__pycache__
+arrmail
